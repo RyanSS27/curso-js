@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        #soma {
+            font-weight: bold;
+        }
+    </style>
+    <title>Primeiros passos com o DOM</title>
+</head>
+<body>
+    <h1>Iniciando os estudo de DOM</h1>
+    <p id="soma">Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem">Clique em mim</div>
+    <br>
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+
+        var n1 = Number(window.prompt('Digite o primeiro número:'))
+
+        var n2 = Number(window.prompt('Digite o segundo número:'))
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        document.write('Repetição: ' + p1.innerHTML)
+
+        var soma = window.document.getElementById('soma')
+
+        soma.innerText = 'O resultado da soma foi: ' + (n1 + n2) 
+
+        var msg = window.document.getElementById('mensagem')
+
+        msg.innerText = 'Olá, ' + nome + '! Essas interações e a repetição do parágrafo acima foram possíveis graças ao JavaScript'
+    </script>
+</body>
+</html>
