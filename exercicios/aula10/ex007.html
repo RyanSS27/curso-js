@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[type='button'] {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #resultado {
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" id="tn1"> +
+    <input type="number" id="tn2">
+    <span id="resultado">= Resultado:</span>
+
+    <input type="button" value="Somar" onclick="somar()">
+    <script>
+        var tn1 = document.querySelector('input#tn1')
+
+        var tn2 = document.querySelector('input#tn2')
+
+        var resp = document.querySelector('span#resultado')
+
+        function somar() {
+            resp.innerHTML = `= Resultado: ${Number(tn1.value) + Number(tn2.value)}`
+        }
+    </script>
+</body>
+</html>
