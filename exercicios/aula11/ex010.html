@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>
+        <label for="tvel">Velocidade do carro:</label>
+
+        <input type="number" id="tvel">km/hr
+    </p>
+    <input type="button" value="Enviar" onclick="enviar()">
+
+    <div id="resp">Sua velocidade é: </div>
+    <script>
+        var tvel = document.getElementById('tvel')
+        var resp = document.getElementById('resp')
+
+        function enviar() {
+            var vel = Number(tvel.value) 
+            resp.innerHTML += vel + ' km/hr'
+
+            if (vel > 150) {
+                resp.innerHTML += `<p><strong>EITA PORRAAA! É o Brian???</strong></p>`
+            }
+
+            if (vel > 60) {
+                resp.innerHTML += `<p>O veículo excedeu o limite de velocidade permitida, portanto, foi <strong>MULTADO</strong>.<p>`
+            }
+
+            resp.innerHTML += `<p>Use cinto de segurança.</p>`
+        }
+    </script>
+</body>
+</html>
