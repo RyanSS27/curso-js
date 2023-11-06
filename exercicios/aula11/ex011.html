@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nascionalidade</h1>
+    <p>
+        <label for="pais">Digite o seu país de origem:</label>
+        <input type="text" id="pais">
+    </p>
+    <input type="button" value="Enviar" onclick="clicou()">
+
+    <div id="retorno"></div>
+
+    <script>
+        var país = document.getElementById('pais')
+
+        function clicou() {
+            if ((país.value == 'Brasil') || (país.value == 'brasil') || (país.value == 'br') || (país.value == 'BR') || (país.value == 'Brazil')) {
+                retorno.innerHTML = 'Você é brasileiro.'
+            } else {
+                retorno.innerHTML = 'Você é estrangeiro.'
+            }
+        }
+    </script>
+</body>
+</html>
