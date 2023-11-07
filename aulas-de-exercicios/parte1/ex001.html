@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #484848;
+            font: normal normal 1.1em arial, helvetica, sans-serif;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin: 25px;
+        }
+
+        div#container {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#hora {
+            text-align: center;
+            display: block;
+        }
+
+        div#bolinha {
+            background: #484848 url() center center / cover no-repeat;
+            width: 250px;
+            height: 250px;
+
+            margin: 20px 0px 0px 0px;
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do dia</h1>
+    <div id="container">
+        <div id="hora">Agora são</div>
+
+        <div id="bolinha"></div>
+    </div>
+    <script>
+        var agora = new Date()
+        var hr = agora.getHours()
+        var msg = document.querySelector('div#hora')
+        var cor = document.body.style
+        var foto = document.getElementById('bolinha').style
+
+        msg.innerHTML = `Agora são ${hr} horas`
+        if (hr > 23 || hr < 0) {
+           msg.innerHTML = `<strong>[Erro! ${hr} é um horário inválido]</strong>`
+           cor.backgroundColor = "#830f0f"
+        } else if (hr >= 6 && hr < 12) {
+            cor.backgroundColor = "#dfd475"
+            foto.backgroundImage = "url(imagens/dia.jpg)"
+        } else if (hr >= 12 && hr < 18) {
+            cor.backgroundColor = "#bb885e"
+            foto.backgroundImage = "url(imagens/tarde.jpg)"
+        } else if (hr >= 18 && hr < 24) {
+            cor.backgroundColor = "#090739"
+            foto.backgroundImage = "url(imagens/noite.jpg)"
+        } else {
+            cor.backgroundColor = "#1c1c1c"
+            foto.backgroundImage = "url(imagens/madrugada.jpg)"
+        }
+    </script>
+</body>
+</html>

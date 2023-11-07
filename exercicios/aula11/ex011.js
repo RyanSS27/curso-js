@@ -10,5 +10,3 @@ if (hr < 6 && hr >= 0) {
 } else {
     console.log('Boa noite!')
 }
-
-console.log(agora.get())
