@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #484848;
+            font: normal normal 1.1em arial, helvetica, sans-serif;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin: 25px;
+        }
+
+        div#container {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 15px;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        div#msg {
+            text-align: center;
+        }
+
+        div#bolinha {
+            background: #484848 url() center center / cover no-repeat;
+            width: 250px;
+            height: 250px;
+
+            margin: 20px auto;
+
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p><label for="">Ano de nascimento:</label> <input type="text" id="nasc"></p>
+        <p>Sexo: <input type="radio" name="opc" id="masc" onclick="masculino()">Masculino  <input type="radio" name="opc" id="fem" onclick="feminino()">Feminino</p>
+
+        <input type="button" value="Verificar" onclick="clicou()">
+
+        <div id="msg">Preencha os dados acima para ver o resultado.</div>
+
+        <div id="bolinha"></div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
