@@ -50,15 +50,15 @@
             height: 250px;
 
             margin: 20px auto;
-
             border-radius: 50%;
+            display: none;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <p><label for="">Ano de nascimento:</label> <input type="text" id="nasc"></p>
-        <p>Sexo: <input type="radio" name="opc" id="masc" onclick="masculino()">Masculino  <input type="radio" name="opc" id="fem" onclick="feminino()">Feminino</p>
+        <p><label for="nasc">Ano de nascimento:</label> <input type="text" id="nasc"></p>
+        <p>Sexo: <input type="radio" name="opc" id="masc" onclick="masculino()"><label for="masc">Masculino</label>  <input type="radio" name="opc" id="fem" onclick="feminino()"><label for="fem">Feminino</label></p>
 
         <input type="button" value="Verificar" onclick="clicou()">
 
