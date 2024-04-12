@@ -6,16 +6,24 @@
     <title>Document</title>
     <style>
         body {
+            background-color: rgb(49, 49, 49);
+            color: white;
             font-size: 2.5em;
         }
     </style>
 </head>
 <body>
+    <h1></h1>
     
+    <h1>Opa, tranquilo?</h1>
     <script>
-        var nome = window.prompt ('Qual o seu nome?')
-        document.write(`O seu nome possuí ${nome.length} letras. <br>`)
-        document.write(`Seu nome escrito só em letras maiúsculas fica dessa forma "${nome.toUpperCase()}", enquanto escrito só em minúsculas fica dessa forma "${nome.toLowerCase()}".`)
+        var nome = window.prompt('Qual o seu nome?')
+        var tittle = window.document.getElementsByTagName('h1').innerHTML
+        tittle = `Olá, ${nome}`
+
+        document.write(`O nome digitado tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculo fica ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúculo fica ${nome.toLowerCase()}`)
     </script>
 </body>
 </html>
