@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="position">
+        <div id="container">
+            <p>Vez de <span id="vez">X</span></p>
+            <table>
+                <tr>
+                    <td onclick="clicou(1,1)" id="q1">1</td>
+                    <td style="border: 2px solid black; border-top: 0px;" onclick="clicou(1,2)" id="q2">2</td>
+                    <td onclick="clicou(1,3)" id="q3">3</td>
+                </tr>
+
+                <tr>
+                    <td style="border: 2px solid black; border-left: 0px;" onclick="clicou(2,1)" id="q4">4</td>
+                    <td onclick="clicou(2,2)" id="q5">5</td>
+                    <td style="border: 2px solid black; border-right: 0px;" onclick="clicou(2,3)" id="q6">6</td>
+                </tr>
+
+                <tr>
+                    <td onclick="clicou(3,1)" id="q7">7</td>
+                    <td style="border: 2px solid black; border-bottom: 0px;" onclick="clicou(3,2)" id="q8">8</td>
+                    <td onclick="clicou(3,3)" id="q9">9</td>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="Limpar" onclick="limpar()">
+    </div>
+</body>
+</html>

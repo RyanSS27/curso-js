@@ -1,4 +1,3 @@
-
 function clicou() {
     var inc = document.querySelector('input#inc')
 
