@@ -14,9 +14,34 @@ linha3[1] = document.querySelector('td#q7')
 linha3[2] = document.querySelector('td#q8')
 linha3[3] = document.querySelector('td#q9')
 
+let msg = document.querySelector('div#msg')
+
 //TESTAR A POSSÍVEL VITÓRIA A CADA JOGADA
 function teste() {
-    
+    if (linha1[1].innerHTML == linha1[2].innerHTML && linha1[2].innerHTML == linha1[3].innerHTML) {
+        msg.innerHTML = `O vencedir foi ${vez}`
+    } else if (linha2[1].innerHTML == linha2[2].innerHTML && linha2[2].innerHTML == linha2[3].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha3[1].innerHTML == linha3[2].innerHTML && linha3[2].innerHTML == linha3[3].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha1[1].innerHTML == linha2[1].innerHTML && linha2[1].innerHTML == linha3[1].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha1[2].innerHTML == linha2[2].innerHTML && linha2[2].innerHTML == linha3[2].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha1[3].innerHTML == linha2[3].innerHTML && linha2[3].innerHTML == linha3[3].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha1[1].innerHTML == linha2[2].innerHTML && linha2[2].innerHTML == linha3[3].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else if (linha1[3].innerHTML == linha2[2].innerHTML && linha2[2].innerHTML == linha3[1].innerHTML) {
+        msg.innerHTML = `O vencedor foi ${vez}`
+    } else {
+        //VERIFICA SE TODOS OS QUADRADOS FORAM PREENCHIDOS
+        for (var espaco = 1; espaco < 4; espaco++) {
+            if (linha1[espaco] != 'X' || linha2[espaco] || linha3[espaco]) {
+
+            }
+        }
+    }
 }
 
 function clicou(x, y) {
