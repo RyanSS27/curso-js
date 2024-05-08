@@ -23,14 +23,15 @@ div.position {
 
 div#container {
     background-color: white;
-    height: 350px;
-    width: 350px;
+    height: 390px;
+    width: 390px;
 
     padding: 15px;
     border-radius: 15px;
 }
 
 p {
+    font-size: 1.3em;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -41,6 +42,7 @@ table {
 }
 
 td {
+    font-size: 2em;
     text-align: center;
     height: 80px;
     width: 80px;
@@ -53,6 +55,6 @@ td:hover {
 }
 
 span {
-    color: rgb(155, 97, 31);
-    font-size: 1.3em;
+    color: #1f7e9b;
+    font-size: 1.5em;
 }

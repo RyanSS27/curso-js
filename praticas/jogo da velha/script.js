@@ -1,4 +1,5 @@
 let contVez = 0
+let vez
 
 let linha1 = [1, 2, 3]
 let linha2 = [1, 2, 3]
@@ -46,21 +47,24 @@ function teste() {
 
 function clicou(x, y) {
     //VERIFICA DE QUAL JOGADOR É A VEZ (X == ímpar O == par)
+    let msgVez = document.querySelector('span#vez')
     contVez += 1
-    let vez
     if (contVez % 2 == 0) {
         vez = "O"
+        msgVez.innerHTML = "O"
     } else {
         vez = "X"
+        msgVez.innerHTML = "X"
     }
 
     //TESTA QUAL LINHA (let x) E QUAL POSIÇÃO (let y) FOI CLICADA E MARCA A JOGADA
     if (x == 1) {
         linha1[y].innerHTML = vez
+        
     } else if (x == 2) {
         linha2[y].innerHTML = vez
     } else if (x == 3) {
-        linha3[y].innerHTML == vez
+        linha3[y].innerHTML = vez
     }
 
     teste()
