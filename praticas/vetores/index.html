@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #484848;
+            font: normal normal 1.1em arial, helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        div#container {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 15px;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        div#msg {
+            text-align: left;
+        }
+
+        div#bolinha {
+            background: #484848 url() center center / cover no-repeat;
+            width: 250px;
+            height: 250px;
+
+            margin: 20px auto;
+            border-radius: 50%;
+            display: none;
+        }
+
+        select {
+            margin-bottom: 15px;
+            min-width: 140px;
+            display: block;
+        }
+
+        option {
+            text-align: center;
+        }
+
+        strong {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Vetor</h1>
+        <label for="n">Número:</label>
+        <input type="number" name="num1" id="num">
+        <input type="submit" value="Inserir valor" onclick="inserir()">
+        <div>
+            <select name="insName" id="ins" size="7">
+                <option value="">==VETOR==</option>
+            </select>
+            <input type="submit" value="Analisar vetor" onclick="analise()">
+            <input type="submit" value="Limpar" onclick="limpar()">
+        </div>
+        
+
+        
+        <div id="msg">Preencha os dados acima para ver o resultado.</div>
+
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

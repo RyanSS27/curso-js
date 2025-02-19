@@ -37,11 +37,24 @@ function teste() {
         msg.innerHTML = `O vencedor foi ${vez}`
     } else {
         //VERIFICA SE TODOS OS QUADRADOS FORAM PREENCHIDOS
-        for (var espaco = 1; espaco < 4; espaco++) {
-            if (linha1[espaco] != 'X' || linha2[espaco] || linha3[espaco]) {
+        let contEspaco = 0
+        /*for (var espaco = 1; espaco < 4; espaco++) {
+            if (linha1[espaco].innerHTML != '') {
+                contEspaco++
+            }
 
+            if (linha2[espaco].innerHTML != '') {
+                contEspaco++
+            }
+
+            if (linha3[espaco].innerHTML != '') {
+                contEspaco++
             }
         }
+
+        if (contEspaco = 9) {
+            msg.innerHTML = `Empate!`
+        }*/
     }
 }
 

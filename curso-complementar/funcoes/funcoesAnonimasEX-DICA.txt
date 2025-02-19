@@ -1,0 +1,3 @@
+1° O parâmetro operação deve receber uma função com a operação determinada quando a função for chamada
+
+2° Cria uma função "soma" separada, para que caso nenhuma função de operação seja passada, ela ocupe o parâmetro

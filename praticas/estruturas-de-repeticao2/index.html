@@ -45,6 +45,8 @@
             margin-bottom: 20px;
         }
 
+        
+
         select {
             display: block;
             min-width: 150px;
@@ -57,14 +59,13 @@
         <h1>Melhor aluno</h1>
 
         <h2>Cadastro das notas</h2>
-        <label for="nalunos">Quantidade de alunos foram avaliados:</label> <input type="number" id="nalunos">
-        <input type="button" value="Confirmar" onclick="clicou()">
-        
-
-        <div id="testes"></div>
-        <div id="relat"></div>
+        <label for="nalunos">Quantidade de alunos foram avaliados:</label> <input type="number" id="nalunos" required>
+        <button onclick="confirma()">Confirmar</button>
+        <div class="cadastro-alunos"></div>
+        <div class="testes"></div>
+        <div class="relat"></div>
     </div>
 
-    <script src="script1.js"></script>
+    <script src="script3.js"></script>
 </body>
 </html>

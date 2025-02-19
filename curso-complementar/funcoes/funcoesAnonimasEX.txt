@@ -1,0 +1,6 @@
+Faça uma função que receba 2 valores e a operação a ser realizada com eles (soma, subtração, divisão, etc) e, caso a operação não seja passada, o parâmetro receberá uma função de soma.
+
+ELA DEVERÁ ser executada em 3 situações diferentes:
+- só os valores sejam passados 
+- com os valores e operação sendo passados
+- uma versão onde a função que será passada como parâmetro com a operação seja reduzida a uma função arrow

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="calculadora">
+            <div class="visor"></div>
+            <table>
+                <tr>
+                    <td class="limpar" onclick="limpa()">AC</td>
+                    <td class="operadores potencia" onclick="clicou('^', 1)">^</td>
+                    <td class="operadores divisao" onclick="clicou('/', 1)">/</td>
+                    <td class="operadores multiplicacao" onclick="clicou('x', 1)">x</td>
+                </tr>
+                <tr>
+                    <td class="n" onclick="clicou('7')">7</td>
+                    <td class="n" onclick="clicou('8')">8</td>
+                    <td class="n" onclick="clicou('9')">9</td>
+                    <td class="operadores subtracao" onclick="clicou('-', 1)">-</td>
+                </tr>
+                <tr>
+                    <td class="n" onclick="clicou('4')">4</td>
+                    <td class="n" onclick="clicou('5')">5</td>
+                    <td class="n" onclick="clicou('6')">6</td>
+                    <td class="operadores soma" onclick="clicou('+', 1)">+</td>
+                </tr>
+                <tr>
+                    <td class="n" onclick="clicou('1')">1</td>
+                    <td class="n" onclick="clicou('2')">2</td>
+                    <td class="n" onclick="clicou('3')">3</td>
+                    <td class="resultado" rowspan="2" onclick="calc('resultado')">&#61;</td>
+                </tr>
+                <tr>
+                    <td class="n" onclick="clicou('0')">0</td>
+                    <td onclick="clicou('.')">,</td>
+                    <td class="delete" onclick="del()">&#8249;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

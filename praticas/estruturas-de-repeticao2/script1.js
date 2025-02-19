@@ -48,7 +48,8 @@ function relatorio() {
 
         var nota = Number(document.getElementsByName('nota')[cont].value)
 
-        soma += nota.value
+        soma += nota
+        relat.innerHTML = nota
         //ENCONTRANDO A MAIOR NOTA CASO OUVER MAIS DE 1 ALUNO
         if (nalunos == 1) {
             melhornota = nota
@@ -63,7 +64,7 @@ function relatorio() {
                 if (nota > melhornota) {
                     melhornota = nota
                     melhoraluno = nome
-                } else if (nota < menornota) {
+                } else if (nota < piornota) {
                     piornota = nota
                     pioraluno = nome
                 }
@@ -78,7 +79,7 @@ function relatorio() {
         relat.innerHTML = `<h2>Relatório</h2> 
         <p>Só o aluno ${melhoraluno} foi avaliado e sua nota é ${melhornota}.</p>`
     } else {
-        relat.innerHTML = `<h2>Relatório</h2>
+        relat.innerHTML += `<h2>Relatório</h2>
         <p>Ao todo, ${nalunos.value} alunos foram avaliados e a média deles ficou ${(soma/nalunos.value).toFixed(2)}</p>
         <p>O aluno com a maior nota foi ${melhoraluno}, tirando ${melhornota}.</p>
         <p>O aluno com maior dificuldade foi ${pioraluno}, tirando ${piornota}</p>`

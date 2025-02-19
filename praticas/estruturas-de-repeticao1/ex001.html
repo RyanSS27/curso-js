@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #484848;
+            font: normal normal 1.1em arial, helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0px 0px 15px 0px;
+        }
+
+        strong {
+            color: #950195;
+        }
+
+        div#container {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 15px;
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+
+        div#msg {
+            text-align: center;
+
+            min-width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Estrutura <strong>for{}</strong></h1>
+        <div id="pos"><label for="inc">Início:</label><input type="text" name="nome"></div>
+
+        <div id="pos">
+            <label for="fim">Fim:</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div id="pos">
+            <label for="passo">Passo:</label>
+            <input type="text" name="seila">
+        </div>
+
+        <div id="pos">
+            <label for="passo">Passo:</label>
+            <input type="text" name="nome">
+        </div>
+
+        <input type="button" value="Verificar" onclick="clicou()">
+
+        <div id="msg">Preparando a contagem</div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
