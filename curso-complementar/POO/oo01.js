@@ -10,7 +10,7 @@ nootebook.preco = 2590
 console.log(nootebook)
 
 //Vou complicar kkkkk
-//Um objeto pode ter outros objetos como característica, e esses objetos tem suas próprias características
+//Um objeto pode ter outros objetos como característica, e esses objetos terem suas próprias características
 
 const carteira = {
     identificacao: 'Pertence ao João',
